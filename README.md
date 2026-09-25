@@ -6,9 +6,9 @@ It combines a React frontend with a Node.js/Express backend and MySQL database, 
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔐 Role-Based Access Control
+### Role-Based Access Control
 
 Three application roles are supported:
 
@@ -18,14 +18,14 @@ Three application roles are supported:
 
 Each role has its own dashboard and protected application flow.
 
-### 🛠️ Admin Dashboard
+### Admin Dashboard
 
 - Register and remove doctors
 - View appointments across the system
 - Monitor dashboard statistics
 - Track doctor, patient, appointment, and pending counts
 
-### 👨‍⚕️ Doctor Dashboard
+### Doctor Dashboard
 
 - View incoming appointment requests
 - Approve or cancel appointments
@@ -33,7 +33,7 @@ Each role has its own dashboard and protected application flow.
 - Mark appointments as completed through the prescription workflow
 - View profile and appointment statistics
 
-### 👤 Patient Portal
+### Patient Portal
 
 - Browse doctors and their specializations
 - View consultation fee information
@@ -43,27 +43,27 @@ Each role has its own dashboard and protected application flow.
 - Cancel pending appointments
 - View and download prescriptions as PDF
 
-### 🤖 AI-Assisted Specialist Routing
+### AI-Assisted Specialist Routing
 
 Patients can describe their symptoms and receive a specialist recommendation using the Google Gemini API.
 
 > The AI feature is intended for **specialist routing assistance**, not medical diagnosis.
 
-### 💳 Payment Integration
+### Payment Integration
 
 Razorpay test-mode integration is used for appointment payment collection.
 
-### 📧 Automated Email Notifications
+### Automated Email Notifications
 
 Patients receive automated email notifications when a doctor approves or cancels an appointment.
 
-### 📄 Prescription PDF Generation
+### Prescription PDF Generation
 
 Completed prescriptions can be generated and downloaded as PDF documents using jsPDF.
 
 ---
 
-## 🧰 Technology Stack
+## Technology Stack
 
 | Layer | Technology |
 |---|---|
@@ -80,7 +80,7 @@ Completed prescriptions can be generated and downloaded as PDF documents using j
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 CareGrid follows a client-server architecture where the React frontend communicates with the Node.js/Express backend through REST APIs.
 
@@ -126,7 +126,7 @@ Patient / Doctor / Admin
 
 ---
 
-## 🗄️ Database Design
+## Database Design
 
 The database is documented around the core healthcare entities described by the project:
 
@@ -185,7 +185,7 @@ For the complete schema and SQL implementation, see:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 CareGrid/
@@ -209,7 +209,7 @@ CareGrid/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -308,7 +308,7 @@ http://localhost:5173
 
 ---
 
-## 🔒 Security
+## Security
 
 - **Environment variables:** Secrets and credentials should remain in `.env` files and must not be committed.
 - **Razorpay credentials:** The `key_id` may be client-facing as required by Razorpay, while the `key_secret` must remain backend-only.
@@ -323,7 +323,7 @@ For a production deployment, authentication should be strengthened with secure s
 
 ---
 
-## ⚙️ Engineering Highlights
+## Engineering Highlights
 
 ### Role-Based Workflows
 
@@ -355,7 +355,7 @@ The SQL layer includes indexes, views, stored procedures, and triggers to suppor
 
 ---
 
-## ⚠️ Current Limitations
+## Current Limitations
 
 - Passwords in the current seed/authentication implementation require stronger protection before production use.
 - No JWT or server-side session management is currently implemented.
@@ -366,22 +366,14 @@ The SQL layer includes indexes, views, stored procedures, and triggers to suppor
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 - **[Database Schema](Hospital%20management%20system.sql)** — complete database definition and seed data
 - **Source Code** — `hms-backend/` and `hms-frontend/`
 
 ---
 
-## 👤 Author
 
-**Sachin Kumar**  
-B.Tech CSE (AI/ML)
-
-[GitHub](https://github.com/sachinkumar-git) · [LinkedIn](https://www.linkedin.com/in/sachin-sde)
-
----
-
-## 📄 License
+## License
 
 This project is intended for academic, portfolio, and learning purposes.
